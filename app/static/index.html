@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCP Demo</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>MCP Demo</h1>
+        <p>A demonstration of FastAPI, LangGraph, and a basic UI</p>
+    </header>
+    
+    <div class="container">
+        <div class="chat-container">
+            <div id="chat-messages" class="chat-messages"></div>
+            
+            <div id="loading-indicator" style="display: none; text-align: center; padding: 10px;">
+                <p>Thinking...</p>
+            </div>
+            
+            <form id="chat-form" class="chat-input">
+                <input 
+                    type="text" 
+                    id="message-input" 
+                    placeholder="Type your message here..." 
+                    autocomplete="off" 
+                    required
+                >
+                <button type="submit">Send</button>
+            </form>
+        </div>
+        
+        <button id="reset-button" class="reset-button">Reset Conversation</button>
+    </div>
+    
+    <script src="/static/js/app.js"></script>
+</body>
+</html>
